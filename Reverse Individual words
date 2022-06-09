@@ -1,0 +1,27 @@
+Question1: Reverse words in string : Hint : Use 2 pointers
+    - i/p : "hello how are you"
+    - o/p : "ollehwoh era uoy"
+
+Answer:
+
+ importjava.util.*;
+ importjava.io.*;
+ classchnge {
+     publicstaticvoidmain(Stringargs[])
+     {
+       Scannersc=newScanner(System.in);
+       Strings=sc.nextLine();
+       StringTokenizers1=newStringTokenizer(s);
+       intc=s1.countTokens();
+       for(intx=0;x<c;x++)
+       {
+        Stringstr=s1.nextToken();
+        StringBuffers2=newStringBuffer(str);
+        Strings3=s2.reverse().toString();
+
+      System.out.print(s3+" ");
+       }
+    
+     }
+    }
+
