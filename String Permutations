@@ -1,0 +1,40 @@
+Question :
+Input:  String s="abc"
+Output: abc bac cab acb bca cba
+
+
+
+
+ANSWER:
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    String str="abc";
+	
+	int n=str.length();
+	int f=1;
+	for(int x=1;x<=n;x++)
+	{
+	    f=f*x;
+	}
+//	System.out.println(f);
+	for(int x=0;x<f;x++)
+	{
+	    StringBuilder sb=new StringBuilder(str);
+	    int temp=x;
+	    for(int j=n;j>=1;j--)
+	    
+	    {
+	        int q=temp/j;
+	        int r=temp%j;
+	    
+	    System.out.print(sb.charAt(r));
+	    sb.deleteCharAt(r);
+	    temp=q;
+	    }
+	    System.out.println(" ");
+	}
+	}
+}
