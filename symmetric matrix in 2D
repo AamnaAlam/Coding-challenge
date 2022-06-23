@@ -1,0 +1,47 @@
+import java.util.*;
+public class symmetricmatrix {
+    public static void main(String args[])
+    {
+        Scanner ob=new Scanner(System.in);
+        int n1=3,n2=3;
+        int a[][]=new int[n1][n2];
+        String str="";
+        for(int x=0;x<n1;x++)
+        {
+            for(int y=0;y<n1;y++)
+            {
+                a[x][y]=ob.nextInt();
+            }
+        }
+        if(n1!=n2)
+        {
+            str=str+"no";
+        }
+        else
+        {
+
+        
+        for(int x=0;x<n1;x++)
+        {
+            for(int y=0;y<n2;y++)
+            {
+               if(a[x][y]!=a[y][x])
+               {
+                  str=str+"no";
+                  break;
+               }
+            }
+        }
+    }
+        if(str.equals("no"))
+        {
+            System.out.println("not symmetric");
+        }
+        else
+        {
+            System.out.println("symmetric");
+        }
+
+    }
+    
+}
