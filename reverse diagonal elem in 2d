@@ -1,0 +1,31 @@
+import java.util.*;
+public class reversediag {
+    
+    public static void main(String args[])
+
+    {
+        int n=3;
+        Scanner ob=new Scanner(System.in);
+        int a[][]=new int[n][n];
+        for(int x=0;x<n;x++)
+        {
+            for(int y=n-1;y>=0;y--)
+            {
+                a[x][y]=ob.nextInt();
+            }
+        }
+        for(int x=0;x<n;x++)
+        {
+            for(int y=0;y<n;y++)
+            {
+                if(x==y)
+                {
+                    System.out.println(a[y][x]);
+                }
+            }
+        }
+    }
+}
+
+    
+
